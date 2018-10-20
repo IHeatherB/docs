@@ -54,7 +54,7 @@ The command will walk you through the following steps:
 		* Options: merge, replace
 			* Merge: NO Discord roles will be deleted. Group roles will be added right under your roles already there.
 			* Replace: ALL Discord roles will be DELETED and REPLACED with the new group roles.
-				* Default: none (nothing will change to the roles)
+		* Default: none (nothing will change to the roles)
 * _Would you like to set a nickname for new members that join your server?_
 	* This will set a nickname for each member that joins the server. Refer to the [Nickname Templates](#nickname-templates) section for more information.
 ### Nickname Templates
