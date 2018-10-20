@@ -9,24 +9,24 @@
 * [Bloxlink Premium](#bloxlink-premium)
 
 ### Getting Started
-The easiest way to setup Bloxlink is with the `!setup` command.  Check your Direct Messages after using the setup command.
-Note: if you want to skip a setting and leave it as what it was before (or to its default value), say `skip` or `next`.
+The easiest way to setup Bloxlink is with the `!setup` command.  Check your Direct Messages after using the setup command. <br/>
+Note: if you want to skip a setting and leave it as what it was before (or to its default value), say `skip` or `next`. <br/>
 The command will walk you through the following steps:
-		* _Would you like to link a ROBLOX group to this Discord server?_
-			* If you want to link your group, specify the group ID here.  Linking your group unlocks group-specific commands, and enables the automatic giving of roles. A member’s rank will also show in the `!getinfo` command.
-				* Default: 0 (no group)
-		* _Would you like to change the Verified role name to something else?_
-			* The verified role is the role users get when they link their Roblox account to their Discord account. 
-				* Default: Verified
-		* _Premium informational post_
-		* _Would you like to automatically transfer your ROBLOX group ranks to Discord roles?_
-			* This will create Discord roles that match your Roblox group (if you’ve provided a group id previously).
-				* Options: merge, replace
-					* Merge: NO Discord roles will be deleted. Group roles will be added right under your roles already there.
-					* Replace: ALL Discord roles will be DELETED and REPLACED with the new group roles.
-				* Default: None
-		* _Would you like to set a nickname for new members that join your server?_
-			* This will set a nickname for each member that joins the server. Refer to the [Nickname Templates](#nickname-templates) section for more information.
+* _Would you like to link a ROBLOX group to this Discord server?_
+	* If you want to link your group, specify the group ID here.  Linking your group unlocks group-specific commands, and enables the automatic giving of roles. A member’s rank will also show in the `!getinfo` command.
+		* Default: 0 (no group)
+* _Would you like to change the Verified role name to something else?_
+	* The verified role is the role users get when they link their Roblox account to their Discord account. 
+		 Default: Verified
+* _Premium informational post_
+* _Would you like to automatically transfer your ROBLOX group ranks to Discord roles?_
+	* This will create Discord roles that match your Roblox group (if you’ve provided a group id previously).
+		* Options: merge, replace
+			* Merge: NO Discord roles will be deleted. Group roles will be added right under your roles already there.
+			* Replace: ALL Discord roles will be DELETED and REPLACED with the new group roles.
+				* Default: none (nothing will change to the roles)
+* _Would you like to set a nickname for new members that join your server?_
+	* This will set a nickname for each member that joins the server. Refer to the [Nickname Templates](#nickname-templates) section for more information.
 ### Nickname Templates
 The nickname template is a set of instructions that determines what nickname a person gets if they use a command that gives nicknames. In addition, if certain server features are enabled, the nickname will be applied when the person joins the server.
 You *CANNOT* omit the {} for the templates.
@@ -61,16 +61,16 @@ By default, Bloxlink doesn’t do much. Sure, you can use `!setup` and link your
 *Power Ups* allow Bloxlink to verify users automatically, and do other actions.
 Power ups must be activated by command toggles.
 Current Power Ups:
-		* !autoverify
-			* Bloxlink will give the Verified role and update the member’s nickname on join, if they apply to the person.
-		* !dynamicroles
-			* Bloxlink will attempt to create missing group roles from your server. Note: this will create roles from the “Main Group” only, not from binds.
-		* !autoroles
-			* Bloxlink will give _all_ roles and binds that apply to the person on join. This is different from `!autoverify` that only gives the verified role and nickname. This is equivalent to the user manually running `!getrole`.
-		* !persistroles (premium)
-			* Bloxlink will update roles and nickname when a user starts typing, no command needed from them! This is very useful if you want to ensure active members in your server are always up-to-date in terms of roles and nicknames.
-		* !grouplock (premium)
-			* Bloxlink will kick anyone not in the Main Group. This is used if you want only group members to join your server. Before kicking the person, Bloxlink will DM them with the instructions on verifying and joining the group.
+* !autoverify
+	* Bloxlink will give the Verified role and update the member’s nickname on join, if they apply to the person.
+* !dynamicroles
+	* Bloxlink will attempt to create missing group roles from your server. Note: this will create roles from the “Main Group” only, not from binds.
+* !autoroles
+	* Bloxlink will give _all_ roles and binds that apply to the person on join. This is different from `!autoverify` that only gives the verified role and nickname. This is equivalent to the user manually running `!getrole`.
+* !persistroles (premium)
+	* Bloxlink will update roles and nickname when a user starts typing, no command needed from them! This is very useful if you want to ensure active members in your server are always up-to-date in terms of roles and nicknames.
+* !grouplock (premium)
+	* Bloxlink will kick anyone not in the Main Group. This is used if you want only group members to join your server. Before kicking the person, Bloxlink will DM them with the instructions on verifying and joining the group.
 ### Command Usage
 To view the commands, use `!help`. The bot will list the usage for each command. Certain commands are based off *prompts*— aka the bot will ask you what argument you want to use for the command. Most of these prompts can be skipped with the pipe ` | ` character to aid in command efficiency. 
 Example: `!somecommand arg1 | this is another arg | last arg here`
@@ -86,9 +86,9 @@ If you purchase from Patreon, link Discord account to your Patreon account from 
 Magic roles are ways to bypass certain Bloxlink restrictions. To create a Magic Role, create a new Discord role with the exact name as below, then give it to a person.
 
 The magic roles are as follows:
-	*  Bloxlink Bypass
-		* Bloxlink will NOT update roles and nicknames for people with these roles.
-	* Bloxlink Updater
-		* Users with this role can run *!updateuser* on other people, as well as run *!verifyall*
-	* Bloxlink Admin
-		* Users with this role can use *any* Bloxlink command.
+*  Bloxlink Bypass
+	* Bloxlink will NOT update roles and nicknames for people with these roles.
+* Bloxlink Updater
+	* Users with this role can run *!updateuser* on other people, as well as run *!verifyall*
+* Bloxlink Admin
+	* Users with this role can use *any* Bloxlink command.
