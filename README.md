@@ -1,3 +1,26 @@
+<div align="center">
+    <img src="https://cdn.discordapp.com/attachments/412792774581026828/453797898170269698/bloxlink.svg" height="200" width="200">
+    <h2>Bloxlink</h2>
+    <p align="center">
+        <p>Bloxlink— a free seamless Discord Roblox Verification Bot and utility bot.</p>
+        <p><a href="https://blox.link">
+            <b>View website » </b>
+        </a> </b> </p>	
+        <p> <a href="https://blox.link/invite">
+            <b>Invite Bloxlink »</b>
+        </a></p>
+    </p>
+</div>
+<p align="center">
+    <a href="https://blox.link">
+        <img src="https://img.shields.io/website-up-down-green-red/https/blox.link.svg?label=website">
+    </a>
+    <a href="https://discord.gg/g4Z2Pbx">
+        <img src="https://img.shields.io/discord/372036754078826496.svg">
+    </a>
+</p>
+
+
 # Bloxlink Documentation
 ## Contents
 * [Getting Started](#getting-started)
