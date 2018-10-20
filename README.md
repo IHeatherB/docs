@@ -73,6 +73,9 @@ The templates are:
 You can use multiple. For example: `{roblox-name} | {group-rank}` will output: `robloxian123 | HR` if their group rank is “HR”. Note: for `{group-rank}`, the group is taken directly from the “Main Group” (!setup).
 *If you would like a user be allowed to change part of their nickname at will*, use the *{clan-tag}* nickname template; otherwise, their nickname will be reverted while using the normal functionality of the bot
 If you want to have *no nickname template*, USE `{disable-nicknaming}`, as this will not apply a nickname to the user.
+<br/>
+<br/>
+NOTE: there is a **max of 32 characters** that can be used for nicknames due to Discord limitations. Bloxlink will take the first 32 characters and use that for the nickname.
 ### Group Roles
 There are 2 ways to tell Bloxlink to give your members roles.
 #### Main Group:
