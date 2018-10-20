@@ -161,5 +161,7 @@ To delete a virtual group, just use the `!delbind` command. To view all binds, u
 	*  Since you can have multiple accounts linked with Bloxlink, you can change your account with `!verify -add`, then use `!switchuser` on all servers you're in with Bloxlink.
 *  I don't want Bloxlink to nickname users!
 	*  Set a nickname template of `{disable-nicknaming}` to disable nicknaming via: `!settings change nicknameTemplate {disable-nicknaming}`
+*  How can I disable Bloxlink from DMing users that join my server?
+	*  Use: `!joindm disable`
 *  Who made Bloxlink?
 	*  Bloxlink was created and is currently developed by one person: justin#1337 on Discord. I am not taking any other developers.
