@@ -8,7 +8,10 @@
         </a> </b> </p>	
         <p> <a href="https://blox.link/invite">
             <b>Invite Bloxlink »</b>
-        </a></p>
+        </a> </p>
+        <p> <a href="https://blox.link/server">
+            <b>Ask for support »</b>
+        </a> </p>
     </p>
 </div>
 <p align="center">
@@ -158,3 +161,5 @@ To delete a virtual group, just use the `!delbind` command. To view all binds, u
 	*  Since you can have multiple accounts linked with Bloxlink, you can change your account with `!verify -add`, then use `!switchuser` on all servers you're in with Bloxlink.
 *  I don't want Bloxlink to nickname users!
 	*  Set a nickname template of `{disable-nicknaming}` to disable nicknaming via: `!settings change nicknameTemplate {disable-nicknaming}`
+*  Who made Bloxlink?
+	*  Bloxlink was created and is currently developed by one person: justin#1337 on Discord. I am not taking any other developers.
