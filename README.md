@@ -7,6 +7,9 @@
 * [Power Ups](#power-ups)
 * [Command Usage](#command-usage)
 * [Bloxlink Premium](#bloxlink-premium)
+* [Magic Roles](#magic-roles)
+* [Virtual Groups](#virtual-groups)
+* [Cool things you can do with Bloxlink](#cool-things-you-can-do-with-bloxlink)
 
 ### Getting Started
 The easiest way to setup Bloxlink is with the `!setup` command.  Check your Direct Messages after using the setup command. <br/>
@@ -52,11 +55,14 @@ Note: binds are more advanced, but offer more freedom for specifying who gets wh
 To make a bind, use `!bind`. The command will ask for your Roblox Group ID, the name of a Discord role in your server, and a list of Roblox Group Rolesets that will get the role. You can call the command to get into the prompts (the bot will ask for the values), or you can do it with one go:
 `!bind 123 | My Awesome Role | 1, 3, 5-10` <br/>
 Take note of the last value.  Those numbers are Roleset IDs. Bind values MUST 100% MATCH the member’s roleset for that group for them to get the role. Example: a value of `1` will match everyone in that group with a roleset of `1`, not higher or lower. To account for a larger range, negate the number. Example: `-10` means everyone with Roleset 10 *and higher*. You can also specify a range: `1-3` means Rolesets `1, 2, 3`. Please note that there is a max on the amount of binds you can do. If you want to bind all ranks, then just use `!setup`, as that’s the easiest way to link your group. Binds are for when you want *verify specific* ranks to get a certain role.
+<br/>
+<br/>
+Note: another way to do binds is with Virtual Groups. See [Virtual Groups](#virtual-groups) for more information.
 ### Permissions
 Most administrative commands require the `Manage Server` permission. To grant a user the permission, make a new Discord role, and check `Manage Server`. Give it to the person; they will now be able to use administrative Bloxlink commands, such as the `!settings` command. <br/>
 Some commands require other permissions than Manage Server, though. Those commands will specify which permission the person needs to run it. <br/>
 <br/>
-Note: it is possible to override this behavior with Magic Roles. See the #Magic-Roles section for more information.
+Note: it is possible to override this behavior with Magic Roles. See the [Magic Roles](#magic-roles) section for more information.
 ### Power Ups
 By default, Bloxlink doesn’t do much. Sure, you can use `!setup` and link your group, but what if you want Bloxlink to do things automatically? <br/>
 *Power Ups* allow Bloxlink to verify users automatically, and do other actions.
@@ -80,7 +86,10 @@ Bloxlink premium allows you to supercharge your Bloxlink experience and efficien
 To see what premium offers, use the `!help` command and skip to the Premium category. 
 You can buy premium a few ways:
 *  [Selly](https://selly.gg/u/bloxlink)
-*  [Patreon](https://patreon.com/bloxlink) <br/>
+*  [Patreon](https://patreon.com/bloxlink)
+
+<br/>
+
 If you purchase premium from Selly, you’ll get a code delivered to your email. Redeem the code with `!redeem <code>` in a server you own. <br/>
 If you purchase from Patreon, link Discord account to your Patreon account from your Patreon settings page. After this, you will automatically receive Bloxlink premium after 5 minutes.
 ### Magic Roles
@@ -93,3 +102,18 @@ The magic roles are as follows:
 	* Users with this role can run *!updateuser* on other people, as well as run *!verifyall*
 * Bloxlink Admin
 	* Users with this role can use *any* Bloxlink command.
+### Virtual Groups
+Virtual groups are another way of doing binds. Basically, virtual groups are binds for anything not group related. For example, you can bind a role for people that own an asset (gamepass, badge, etc.). <br/>
+To create a new virtual group, use the corresponding command:
+*  !assetbind
+	*  Use this to bind a role for people that own an asset. Just provide the ID of the asset (found in the URL - it should just be numbers)
+*  !devforumbind
+	*  Use this to bind a role for people that are devforum members.
+*  !premiumbind
+	*  Use this to bind a role for people that have Bloxlink premium.
+To delete a virtual group, just use the `!delbind` command. To view all binds, use `!viewbinds`.
+### Cool things you can do with Bloxlink
+*  Ever wanted to have Bloxlink relay group shouts to your Discord channel? You can with the `!shoutproxy` command! This is a premium command
+*  Clan tags! Put {clan-tag} in the nickname template, and users can assign text there with `!clantag <text>`.
+*  Link multiple accounts! Use `!verify -add` to add a new user to your Discord account, then use `!switchuser` on another server to verify as that user.
+*  [Power-Ups](#power-ups) are pretty cool too...
